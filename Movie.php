@@ -82,10 +82,12 @@ class Movie
 
 $movie = new Movie('Superman', 'Azione, Avventura, Fantascienza', 'Sul pianeta Kripton é il 1948 quando il tribunale sta giudicando tre traditori. Il presidente del tribunale manda suo figlio Kal-El in salvo sulla terra, dove a causa della diversa atmosfera assume poteri straordinari. Viene adottato da una copia diventando così Clark Kent.');
 
-// $movie->title = 'Superman';
-// $movie->genre = 'Azione, Avventura, Fantascienza';
-// $movie->duration = '143min';
-// $movie->production = 'Stati Uniti d\'America, Regno Unito, Canada';
-// $movie->director = 'Richard Donner';
-// $movie->description = 'Sul pianeta Kripton é il 1948 quando il tribunale sta giudicando tre traditori. Il presidente del tribunale manda suo figlio Kal-El in salvo sulla terra, dove a causa della diversa atmosfera assume poteri straordinari. Viene adottato da una copia diventando così Clark Kent.'; 
+$movie->setDuration(143);
+$movie->setProduction('Stati Uniti d\'America, Regno Unito, Canada');
+$movie->setDirector('Richard Donner');
+
+
+$secondMovie = new Movie('Sing', 'Animazione, Commedia, Famiglia, Musicale', 'Il koala Buster Moon si è innamorato del teatro all\'età di sei anni e al teatro ha dedicato la sua vita. Ha anche accumulato una discreta serie di fiaschi e di debiti e ora è ricercato dalla banca a cui ha chiesto un prestito e dai macchinisti che reclamano lo stipendio. Come salvare capra e cavoli? Buster ha un\'idea geniale: un talent show. Apre quindi le porte del suo teatro ad una lunga fila di aspiranti cantanti e performer e sceglie i suoi gioielli: Rosita, maialina madre di 25 figli piccoli, Mike, topino vanitoso e vocalist d\'eccezione, Ash, porcospina dal cuore rock e Johnny, scimmione dall\'animo blues. Ci sarebbe anche Meena, elefantina portentosa, apparentemente troppo timida per esibirsi in pubblico...');
+
 var_dump($movie);
+var_dump($secondMovie);
